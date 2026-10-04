@@ -1,0 +1,629 @@
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef3f8,
+            #f8fafc
+        );
+
+    color: #172033;
+
+    font-family:
+        "Noto Sans Telugu",
+        "Nirmala UI",
+        "Gautami",
+        Arial,
+        sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+
+    min-height: 80px;
+
+    padding:
+        15px 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0b2850,
+            #174d82
+        );
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.header h1 {
+
+    margin: 0;
+
+    font-size: 28px;
+
+}
+
+
+.header p {
+
+    margin: 3px 0 0;
+
+    opacity: .8;
+
+}
+
+
+.version {
+
+    padding:
+        8px 14px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.3);
+
+    border-radius:
+        20px;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+
+    max-width:
+        1450px;
+
+    margin:
+        25px auto;
+
+    padding:
+        0 20px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        25px;
+
+}
+
+
+/* =========================
+   PANELS
+========================= */
+
+.form-section,
+.preview-section {
+
+    background:
+        white;
+
+    border:
+        1px solid
+        #dce3ec;
+
+    border-radius:
+        18px;
+
+    padding:
+        25px;
+
+    box-shadow:
+        0 12px 30px
+        rgba(0,0,0,.07);
+
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h2 {
+
+    margin-top: 0;
+
+}
+
+
+.description {
+
+    color:
+        #697586;
+
+    font-size:
+        14px;
+
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+label {
+
+    display:
+        block;
+
+    margin:
+        15px 0;
+
+    font-size:
+        14px;
+
+    font-weight:
+        700;
+
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+input,
+textarea,
+select {
+
+    width:
+        100%;
+
+    margin-top:
+        7px;
+
+    padding:
+        12px;
+
+    border:
+        1px solid
+        #d5dce6;
+
+    border-radius:
+        10px;
+
+    font-family:
+        inherit;
+
+    font-size:
+        14px;
+
+    background:
+        white;
+
+}
+
+
+textarea {
+
+    resize:
+        vertical;
+
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+
+    outline:
+        none;
+
+    border-color:
+        #2f6fad;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(47,111,173,.12);
+
+}
+
+
+/* =========================
+   LOCATIONS
+========================= */
+
+.location-header {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    margin-top:
+        20px;
+
+}
+
+
+.location-header h3 {
+
+    margin:
+        0;
+
+}
+
+
+.location-header p {
+
+    margin:
+        3px 0;
+
+    color:
+        #697586;
+
+    font-size:
+        12px;
+
+}
+
+
+.location {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.3fr
+        .8fr
+        .8fr
+        45px;
+
+    gap:
+        8px;
+
+    align-items:
+        end;
+
+    padding:
+        10px;
+
+    margin:
+        10px 0;
+
+    background:
+        #f8fafc;
+
+    border:
+        1px solid
+        #e1e7ef;
+
+    border-radius:
+        12px;
+
+}
+
+
+.location label {
+
+    margin:
+        0;
+
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+
+    border:
+        none;
+
+    border-radius:
+        10px;
+
+    padding:
+        11px 16px;
+
+    font-family:
+        inherit;
+
+    font-weight:
+        700;
+
+    cursor:
+        pointer;
+
+    transition:
+        .2s;
+
+}
+
+
+button:hover {
+
+    transform:
+        translateY(-1px);
+
+}
+
+
+/* Secondary */
+
+.secondary-button {
+
+    background:
+        #edf3f9;
+
+    color:
+        #18395d;
+
+}
+
+
+/* Remove */
+
+.remove-button {
+
+    background:
+        #f9dcdc;
+
+    color:
+        #a51f1f;
+
+    height:
+        42px;
+
+}
+
+
+/* =========================
+   TWO COLUMN
+========================= */
+
+.two-column {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        15px;
+
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.buttons {
+
+    display:
+        flex;
+
+    justify-content:
+        flex-end;
+
+    gap:
+        10px;
+
+    margin-top:
+        20px;
+
+}
+
+
+.reset-button {
+
+    background:
+        #edf0f4;
+
+    color:
+        #28384d;
+
+}
+
+
+.download-button {
+
+    background:
+        #174d82;
+
+    color:
+        white;
+
+    padding:
+        13px 20px;
+
+}
+
+
+/* =========================
+   PREVIEW
+========================= */
+
+.preview-header {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+}
+
+
+.preview-header span {
+
+    color:
+        #697586;
+
+    font-size:
+        12px;
+
+}
+
+
+.canvas-container {
+
+    margin-top:
+        15px;
+
+    padding:
+        15px;
+
+    background:
+        #dfe5ec;
+
+    border-radius:
+        15px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    max-height:
+        80vh;
+
+    overflow:
+        auto;
+
+}
+
+
+canvas {
+
+    display:
+        block;
+
+    width:
+        min(100%, 620px);
+
+    height:
+        auto;
+
+    background:
+        white;
+
+    box-shadow:
+        0 15px 35px
+        rgba(0,0,0,.22);
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align:
+        center;
+
+    padding:
+        15px;
+
+    color:
+        #697586;
+
+    font-size:
+        12px;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 1000px) {
+
+    .container {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+
+@media(max-width: 600px) {
+
+    .header {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+    }
+
+
+    .two-column {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .location {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .location label:first-child {
+
+        grid-column:
+            1 / -1;
+
+    }
+
+
+    .remove-button {
+
+        grid-column:
+            2;
+
+    }
+
+}

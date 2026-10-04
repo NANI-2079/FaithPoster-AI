@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="te">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FaithPoster AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div>
+            <h1>✝ FaithPoster AI</h1>
+            <p>Christian Church Poster Designer</p>
+        </div>
+
+        <span class="version">
+            Version 1
+        </span>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+        <!-- ========== FORM SECTION ========== -->
+
+        <section class="form-section">
+
+            <h2>Create Your Poster</h2>
+
+            <p class="description">
+                Enter your church meeting details below.
+            </p>
+
+
+            <!-- Church Name -->
+
+            <label>
+                Church Name
+
+                <input
+                    type="text"
+                    id="churchName"
+                    value="మన సంఘం"
+                    placeholder="Enter church name">
+            </label>
+
+
+            <!-- Event Title -->
+
+            <label>
+                Event Title
+
+                <input
+                    type="text"
+                    id="eventTitle"
+                    value="ఆదివారం సంఘ ఆరాధన"
+                    placeholder="Example: Sunday Worship">
+            </label>
+
+
+            <!-- Date -->
+
+            <label>
+                Date
+
+                <input
+                    type="date"
+                    id="eventDate"
+                    value="2026-10-04">
+            </label>
+
+
+            <!-- Bible Verse -->
+
+            <label>
+                Bible Verse / Message
+
+                <textarea
+                    id="verse"
+                    rows="4">యెహోవాను సంతోషముతో సేవించుడి; ఆనందగానముతో ఆయన సన్నిధికి రండి.</textarea>
+
+            </label>
+
+
+            <!-- ================= LOCATIONS ================= -->
+
+            <div class="location-header">
+
+                <div>
+
+                    <h3>Meeting Locations</h3>
+
+                    <p>
+                        Add church meeting places and timings.
+                    </p>
+
+                </div>
+
+                <button
+                    id="addLocation"
+                    class="secondary-button">
+
+                    + Add Location
+
+                </button>
+
+            </div>
+
+
+            <div id="locations">
+
+                <!-- Location 1 -->
+
+                <div class="location">
+
+                    <label>
+                        Place
+
+                        <input
+                            class="place"
+                            value="పొతునూరు">
+                    </label>
+
+                    <label>
+                        Start
+
+                        <input
+                            class="start"
+                            value="08:00 AM">
+                    </label>
+
+                    <label>
+                        End
+
+                        <input
+                            class="end"
+                            value="10:00 AM">
+                    </label>
+
+                    <button
+                        class="remove-button">
+
+                        ✕
+
+                    </button>
+
+                </div>
+
+
+                <!-- Location 2 -->
+
+                <div class="location">
+
+                    <label>
+                        Place
+
+                        <input
+                            class="place"
+                            value="కొటపాడు">
+                    </label>
+
+                    <label>
+                        Start
+
+                        <input
+                            class="start"
+                            value="10:00 AM">
+                    </label>
+
+                    <label>
+                        End
+
+                        <input
+                            class="end"
+                            value="12:00 PM">
+                    </label>
+
+                    <button
+                        class="remove-button">
+
+                        ✕
+
+                    </button>
+
+                </div>
+
+
+                <!-- Location 3 -->
+
+                <div class="location">
+
+                    <label>
+                        Place
+
+                        <input
+                            class="place"
+                            value="విసన్నపేట">
+                    </label>
+
+                    <label>
+                        Start
+
+                        <input
+                            class="start"
+                            value="05:00 PM">
+                    </label>
+
+                    <label>
+                        End
+
+                        <input
+                            class="end"
+                            value="07:00 PM">
+                    </label>
+
+                    <button
+                        class="remove-button">
+
+                        ✕
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= THEME ================= -->
+
+            <div class="two-column">
+
+                <label>
+
+                    Design Theme
+
+                    <select id="theme">
+
+                        <option value="sunrise">
+                            Sunrise Worship
+                        </option>
+
+                        <option value="prayer">
+                            Prayer & Peace
+                        </option>
+
+                        <option value="youth">
+                            Youth Meeting
+                        </option>
+
+                        <option value="christmas">
+                            Christmas
+                        </option>
+
+                        <option value="easter">
+                            Easter
+                        </option>
+
+                        <option value="dark">
+                            Classic Dark
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+
+                    Poster Size
+
+                    <select id="posterSize">
+
+                        <option value="portrait">
+                            Portrait
+                        </option>
+
+                        <option value="story">
+                            WhatsApp / Instagram Story
+                        </option>
+
+                    </select>
+
+                </label>
+
+            </div>
+
+
+            <!-- ================= LOGO ================= -->
+
+            <label>
+
+                Church Logo
+
+                <input
+                    type="file"
+                    id="logo"
+                    accept="image/*">
+
+            </label>
+
+
+            <!-- ================= BUTTONS ================= -->
+
+            <div class="buttons">
+
+                <button
+                    id="resetButton"
+                    class="reset-button">
+
+                    Reset
+
+                </button>
+
+                <button
+                    id="downloadButton"
+                    class="download-button">
+
+                    ⬇ Download Poster
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========== PREVIEW SECTION ========== -->
+
+        <section class="preview-section">
+
+            <div class="preview-header">
+
+                <h2>Live Preview</h2>
+
+                <span>
+                    Poster Preview
+                </span>
+
+            </div>
+
+
+            <div class="canvas-container">
+
+                <canvas
+                    id="posterCanvas"
+                    width="1080"
+                    height="1350">
+
+                    Your browser does not support Canvas.
+
+                </canvas>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        ✝ FaithPoster AI
+        <br>
+
+        Christian Poster Designer — Version 1
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
